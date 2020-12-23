@@ -1,0 +1,8 @@
+MOV AX, 0780H
+MOV BX, 0560H
+SUB AX, BX
+HLT
+
+
+
+

@@ -1,0 +1,11 @@
+MOV SI,0500H
+MOV DI,0600H
+MOV CL,09H
+X:MOV AL,[DI]
+  ADD AL,[SI]
+  MOV [DI],AL
+  INC SI
+  INC DI
+  DEC CL
+  JNZ X
+HLT        

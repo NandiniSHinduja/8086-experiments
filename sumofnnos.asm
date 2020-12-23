@@ -1,0 +1,11 @@
+ 
+ 
+MOV SI ,0200H
+MOV CL,04H
+MOV AL,00H
+ADDITION:
+    ADD AL,[SI]
+    INC SI    
+    DEC CL
+    JNZ ADDITION
+hlt

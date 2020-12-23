@@ -1,0 +1,8 @@
+MOV SI,0500H
+MOV CL,00H
+X:  CMP [SI],01H
+    JC Y
+    INC CL
+    INC SI
+    JMP X
+Y:HLT
